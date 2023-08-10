@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе "Маргарита"</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero-section" class="background-tint">
+        <h2 style="font-size: 34px;">Добро пожаловать в кафе "Маргарита"</h2>
+        <p>В нашем уютном кафе время замедляет свой бег, а вкус приобретает новые оттенки. </p>
+        <p>Мы с гордостью представляем вам небольшой уголок искусства кулинарии, где классические блюда оживают с новыми нюансами и переплетаются с атмосферой теплого приема.</p>
+        <div class="cta-button-r">
+        <a style="cursor: pointer;" onclick="scrollToMenu()" class="cta-button">Узнать больше</a>
+        </div>
+    </section>
+    
+    <section id="menu-section">
+        <h2 style="font-size: 34px;"><a href="menu.html">Категории меню</a></h2>
+        <p>Изысканность в каждом блюде: погрузитесь в нашу коллекцию классических кулинарных шедевров</p>
+        
+        <!-- --------- слайдер ---------- -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-salats"><img src="img/slide1.jpg" style="width:100%"></a>
+                <div class="text">Салаты</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-sidedishes"><img src="img/slide2.jpg" style="width:100%"></a>
+                <div class="text">Гарниры</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-soups"><img src="img/slide3.jpg" style="width:100%"></a>
+                <div class="text">Супы</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-maindishes"><img src="img/slide4.jpeg" style="width:100%"></a>
+                <div class="text">Основные блюда</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-bakery"><img src="img/slide5.jpg" style="width:100%"></a>
+                <div class="text">Выпечка</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                    <a href="menu.html#categories-drinks"><img src="img/slide6.jpg" style="width:100%"></a>
+                <div class="text">Горячие напитки</div>
+            </div>
+        
+            <!-- кнопки вперед и назад -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- идентификаторы -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+
+    
+    <section id="about-section" class="background-tint">
+        <h2><a href="about.html" style="font-size: 34px;">О нас</a></h2>
+        <p>В нашем кафе мы воссоздали атмосферу старинной элегантности, сочетающуюся с современными акцентами. 
+        <p>Наша команда профессионалов, состоящая из опытных поваров и приветливого персонала, стремится превзойти ваши ожидания и создать незабываемый опыт для вас и ваших близких.</p>
+    </section>
+    
+    <section id="contact-section">
+        <h2><a href="contacts.html" style="font-size: 34px;"> Контакты</a></h2>
+        <p>Мы находимся по адресу: Ессентуки, ул.Гагарина, 95А</p>
+        <p>Телефон: 8(918)885-62-07</p>
+    </section>
+    
+    <footer>
+        <p class="footer-text">&copy; 2023 Кафе "Маргарита". Все права защищены.</p>
+    </footer>
+
+    <script>
+        function scrollToMenu() {
+            const menuSection = document.getElementById("menu-section");
+            menuSection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

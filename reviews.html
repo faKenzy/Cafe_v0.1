@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reviews-page">
+        <div class="container">
+            <!-- <h1 style="color: rgb(210, 30, 30)">Отзывы</h1> -->
+            
+            <div class="form">
+            <div class="form-group">
+                <label for="name">Вы также можете рассказать нам о своих впечатлениях!</label>
+                <br>
+                <input type="text" id="name" placeholder="Имя">
+            </div>
+            <div class="form-group">
+                <!-- <br>
+                <label for="message">Отзыв:</label>
+                <br> -->
+                <textarea id="message" placeholder="Поделитесь мнением"></textarea>
+                <br>
+            </div>
+            <div class="form-group">
+                <button onclick="addReview()">Оставить отзыв</button>
+            </div>
+            </div>
+            <h1 style="color: rgb(210, 30, 30)">Отзывы</h1>
+            <div class="reviews" id="reviews">
+            <!-- Здесь будут отображаться отзывы -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">&copy; 2023 Кафе "Маргарита". Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
